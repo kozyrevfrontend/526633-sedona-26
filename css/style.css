@@ -126,11 +126,86 @@ a {
   background-position: center bottom;
 }
 
-.promo-header {
+.promo__header {
   display: block;
   margin: 0 auto;
   padding-top: 76px;
 }
+
+/* Блок интро */
+.intro {
+  box-sizing: border-box;
+  min-height: 216px;
+  padding-top: 61px;
+
+  background-color: #ffffff;
+}
+
+.intro__slogan {
+  margin: 0;
+  padding-bottom: 27px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.intro__propose {
+  margin: 0;
+
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Причины для посещения */
+.reason-row {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  min-height: 256px;
+}
+
+.reason-row__wrapper {
+  box-sizing: border-box;
+  width: 400px;
+  padding-top: 48px;
+
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.reason-row__header {
+  margin: 0;
+  padding-right: 40px;
+  padding-bottom: 23px;
+  padding-left: 40px;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.reason-row__number {
+  margin: 0;
+  padding-right: 40px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+}
+
+.reason-row__description {
+  margin: 0;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+.reason-row--reverse {
+  flex-direction: row-reverse;
+}
+
 
 
 
