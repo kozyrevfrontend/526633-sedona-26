@@ -159,7 +159,7 @@ a {
   text-align: center;
 }
 
-/* Причины для посещения */
+/* Причины для посещения в строку */
 .reason-row {
   display: flex;
   flex-direction: row;
@@ -262,9 +262,54 @@ a {
 
 .recommended__advice {
   margin: 0;
+  margin-bottom: 20px;
 }
 
+/* Причины для посещения в колонки */
+.reason-columns {
+  box-sizing: border-box;
+  min-height: 256px;
+}
 
+.reason-columns__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reason-columns__item {
+  box-sizing: border-box;
+  width: 400px;
+  padding-top: 48px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+}
+
+.reason-columns__header {
+  display: inline-block;
+  width: 130px;
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.reason-columns__number {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.reason-columns__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 
 
