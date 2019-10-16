@@ -206,6 +206,63 @@ a {
   flex-direction: row-reverse;
 }
 
+/* Блок с рекомендациями */
+.recommended {
+  box-sizing: border-box;
+  min-height: 330px;
+
+  background-color: #ffffff;
+}
+
+.recommended__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.recommended__item {
+  box-sizing: border-box;
+  width: 400px;
+  padding-top: 162px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+}
+
+.recommended__item:first-child {
+  background-image: url(../img/recommended-bg-house.svg);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+
+.recommended__item:nth-child(2) {
+  background-image: url(../img/recommended-bg-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+}
+
+.recommended__item:last-child {
+  background-image: url(../img/recommended-bg-gift.svg);
+  background-repeat: no-repeat;
+  background-position: center 56px;
+}
+
+.recommended__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.recommended__advice {
+  margin: 0;
+}
 
 
 
