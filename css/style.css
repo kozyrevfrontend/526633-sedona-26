@@ -311,5 +311,64 @@ a {
   margin-bottom: 20px;
 }
 
+/* Блока поиска гостиницы */
+.search {
+  box-sizing: border-box;
+  min-height: 291px;
+  padding-top: 52px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.search__slogan {
+  display: inline-block;
+  margin-bottom: 23px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.search__offer {
+  margin: 0;
+  margin-bottom: 46px;
+
+  line-height: 24px;
+}
+
+.search__btn {
+  box-sizing: border-box;
+  width: 568px;
+  height: 86px;
+  border: none;
+
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.search__btn:hover {
+  background-color: #604e43;
+
+  cursor: pointer;
+}
+
+.search__btn:active {
+  background-color: #503e33;
+}
+
+.search__btn:active .search__btn-text {
+  opacity: 0.3;
+}
+
 
 
