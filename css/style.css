@@ -370,5 +370,25 @@ a {
   opacity: 0.3;
 }
 
+.search__btn-wrapper {
+  position: relative;
+}
+
+.search__form-wrapper {
+  position: absolute;
+  top: 86px;
+  left: 296px;
+}
+
+.booking-form {
+  box-sizing: border-box;
+  width: 568px;
+  min-height: 395px;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+
+}
+
 
 

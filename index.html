@@ -105,7 +105,49 @@
         <div class="search">
           <b class="search__slogan">Заинтересовались?</b>
           <p class="search__offer">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="search__btn" type="button" aria-label="Нажмите для поиска гостиницы в Седоне" ><span class="search__btn-text">Поиск гостиницы в Седоне</span></button>
+          <div class="search__btn-wrapper">
+            <button class="search__btn" type="button" aria-label="Нажмите для поиска гостиницы в Седоне" ><span class="search__btn-text">Поиск гостиницы в Седоне</span></button>
+
+            <div class="search__form-wrapper">
+              <h2 class="search__form__header visually-hidden">Введите параметры поиска гостиницы</h2>
+              <form class="search__form booking-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="booking-form__item">
+                  <label class="booking-form__date-label" for="date-arrival">Дата заезда:</label>
+                  <div class="booking-form__date-wrapper">
+                    <input class="booking-form__date-input" id="date-arrival" type="text" name="date-arrival" value="24 апреля 2017" aria-label="Введите дату заезда">
+                    <!--svg-->
+                  </div>
+                </div>
+                <div class="booking-form__item">
+                  <label class="booking-form__date-label" for="date-departure">Дата выезда:</label>
+                  <div class="booking-form__date-wrapper">
+                    <input class="booking-form__date-input" id="date-departure" type="text" name="date-departure" value="4 июля 2017" aria-label="Введите дату выезда">
+                    <!--svg-->
+                  </div>
+                </div>
+                <div class="booking-form__guests">
+                  <div class="booking-form__item">
+                    <label class="booking-form__number-label" for="adults"></label>
+                    <div class="booking-form__number-wrapper">
+                      <button class="booking-form__number-btn" type="button" aria-label="Уменьшить количество взрослых гостей">-</button>
+                      <input class="booking-form__number-input" id="adults" type="text" name="adults" value="2" aria-label="Введите количество взрослых гостей">
+                      <button class="booking-form__number-btn" type="button" aria-label="Увеличить количество взрослых гостей">+</button>
+                    </div>
+                  </div>
+                  <div class="booking-form__item">
+                    <label class="booking-form__number-label" for="kids"></label>
+                    <div class="booking-form__number-wrapper">
+                      <button class="booking-form__number-btn" type="button" aria-label="Уменьшить количество детей">-</button>
+                      <input class="booking-form__number-input" id="kids" type="text" name="kids" value="0" aria-label="Введите количество детей">
+                      <button class="booking-form__number-btn" type="button" aria-label="Увеличить количество детей">+</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="booking-form__submit-btn" type="submit" aria-label="Найти гостиницу">Найти</button>
+              </form>
+            </div>
+          </div>
+
         </div>
 
       </main>
