@@ -591,5 +591,123 @@ a {
   opacity: 0.3;
 }
 
+/* Блок карты */
+.map {
+  box-sizing: border-box;
+  width: 1200px;
+  min-height: 593px;
+
+  background-image: url(../img/map.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.map__interactive {
+  border: none;
+  overflow: hidden;
+}
+
+/* Футер */
+.page-footer {
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+  min-height: 120px;
+  margin-top: -120px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hashtag,
+.social,
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.hashtag__text {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: auto;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 6px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.social__link--tw {
+  background-image: url(../img/twitter-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social__link--fb {
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.social__link--youtube {
+  background-image: url(../img/youtube-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.copyright__img {
+  fill: #000000;
+}
+
+.copyright__link:hover .copyright__img {
+  fill: #81b3d2;
+}
+
+.copyright__link:active .copyright__img {
+  fill: #bdbbbc;
+}
+
+.copyright__text {
+  margin-right: 6px;
+}
+
+
+
+
+
 
 
