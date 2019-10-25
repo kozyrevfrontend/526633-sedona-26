@@ -646,11 +646,25 @@ a {
 }
 
 .social__item {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 46px;
+  height: 48px;
   margin-right: 6px;
+
+  background-color: #81b3d2;
 }
 
 .social__item:last-child {
   margin-right: 0;
+}
+
+.social__item:hover {
+  background-color: #669ec0;
+}
+
+.social__item:active {
+  background-color: #5496bd;
 }
 
 .social__link {
@@ -659,16 +673,11 @@ a {
   width: 46px;
   height: 48px;
 
-  background-color: #81b3d2;
-}
-
-.social__link:hover {
-  background-color: #669ec0;
+  background-color: transparent;
 }
 
 .social__link:active {
   opacity: 0.3;
-  background-color: #5496bd;
 }
 
 .social__link--tw {
