@@ -100,6 +100,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-list__link--current {
+  color: #766357;
+}
+
 /* Блок промо */
 .promo {
   position: relative;
@@ -979,6 +983,130 @@ a {
 
   background: #ffffff;
 }
+
+/* Параметры сортировки результатов поиска */
+.sort {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 87px;
+  padding-right: 72px;
+  padding-left: 72px;
+
+  background-color: #ffffff;;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sort__founded {
+  margin: 0;
+  margin-right: 47px;
+  padding: 0;
+  padding-top: 31px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sort__title {
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  padding-top: 36px;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.breadcrumbs {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  padding-top: 36px;
+  margin-right: 33px;
+}
+
+.breadcrumbs__link {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.breadcrumbs__link:hover {
+  color: #81b3d2;
+}
+
+.breadcrumbs__link:focus,
+.breadcrumbs__link:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+
+
+.view-by {
+  display: flex;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 40px;
+
+  list-style: none;
+}
+
+.view-by__link {
+  position: relative;
+}
+
+.view-by__link--up::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #cacaca;
+}
+
+.view-by__link--down::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+  border-bottom: 10px solid #81b3d2;
+
+  transform: rotate(180deg);
+}
+
+.view-by__link--up:hover::before,
+.view-by__link--down:hover::before {
+  border-bottom: 10px solid #231f20;
+}
+
+
+
+.view-by__link--up:focus::before,
+.view-by__link--up:active::before,
+.view-by__link--down:focus::before,
+.view-by__link--down:active::before {
+  border-bottom: 10px solid #81b3d2;
+}
+
 
 
 
