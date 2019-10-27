@@ -614,6 +614,14 @@ a {
 
   box-sizing: border-box;
   min-height: 120px;
+
+  background-color: rgba(255, 255, 255);
+}
+
+.page-footer--index {
+  position: relative;
+  z-index: 10;
+
   margin-top: -120px;
 
   background-color: rgba(255, 255, 255, 0.9);
@@ -713,6 +721,266 @@ a {
 .copyright__text {
   margin-right: 6px;
 }
+
+/* Фильтр жилья */
+.filters {
+  box-sizing: border-box;
+  width: 1200px;
+  min-height: 217px;
+  padding-top: 28px;
+  padding-right: 73px;
+  padding-left: 73px;
+
+  background-image: url(../img/filters-bg.jpg);
+  background-position: center -60px;
+  background-repeat: no-repeat;
+}
+
+.filters__form {
+  display: flex;
+
+  color: #ffffff;
+}
+
+.filters__group {
+  box-sizing: border-box;
+  width: 240px;
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
+
+  border: none;
+}
+
+.filters__group-name {
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filters__item {
+  margin-bottom: 25px;
+  padding-left: 37px;
+}
+
+.filters__label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.filters__checkbox + .filters__label::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -1px;
+
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.filters__checkbox:checked + .filters__label::before {
+  display: none;
+}
+
+.filters__checkbox:checked + .filters__label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -1px;
+
+  box-sizing: border-box;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filters__checkbox:disabled + .filters__label::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -1px;
+
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #bdbbbc;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.filters__checkbox:checked:disabled + .filters__label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: -1px;
+
+  box-sizing: border-box;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/checkbox-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.filters__checkbox:focus + .filters__label::before,
+.filters__checkbox:focus + .filters__label::after {
+  outline: 4px solid lightblue;
+}
+
+.filters__range {
+  box-sizing: border-box;
+  width: 318px;
+  margin-left: auto;
+}
+
+.filters__range-title {
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters__price-controls {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filters__price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+
+  transform: translate(-50%, -50%);
+}
+
+.filters__price-label {
+  display: inline-block;
+  width: 90px;
+  padding-left: 65px;
+
+  font-size: 14px;
+  line-height: 31px;
+
+  cursor: pointer;
+}
+
+.filters__price-label--max-price {
+  padding-left: 58px;
+}
+
+.filters__price-input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.filters__range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.filters__scale {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.filters__bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.filters__range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
+  cursor: pointer;
+}
+
+.filters__range-toggle:hover {
+  border: 9px solid #ffffff;
+}
+
+.filters__range-toggle--min {
+  left: 0;
+}
+
+.filters__range-toggle--max {
+  left: 80%;
+}
+
+.filters__btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filters__btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+
 
 
 
