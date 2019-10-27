@@ -845,9 +845,9 @@ a {
   background-repeat: no-repeat;
 }
 
-.filters__checkbox:focus + .filters__label::before,
-.filters__checkbox:focus + .filters__label::after {
-  outline: 4px solid lightblue;
+.filters__checkbox:focus + .filters__label {
+  font-size: 16px;
+  font-weight: 700;;
 }
 
 .filters__range {
@@ -1048,7 +1048,10 @@ a {
   border-bottom: none;
 }
 
-
+.breadcrumbs__link-current {
+  color: #81b3d2;
+  border-bottom: none;
+}
 
 .view-by {
   display: flex;
@@ -1098,13 +1101,150 @@ a {
   border-bottom: 10px solid #231f20;
 }
 
-
-
 .view-by__link--up:focus::before,
 .view-by__link--up:active::before,
 .view-by__link--down:focus::before,
 .view-by__link--down:active::before {
   border-bottom: 10px solid #81b3d2;
+}
+
+/* Каталог недвижимости */
+.search-results {
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog__item{
+  box-sizing: border-box;
+  min-height: 151px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-card {
+  display: flex;
+  box-sizing: border-box;
+  padding-right: 72px;
+  padding-left: 72px;
+}
+
+.hotel-card__img {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.hotel-card__info {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 26px;
+}
+
+.hotel-card__title {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotel-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 180px;
+  margin-bottom: 14px;
+}
+
+.hotel-card__details-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 110px;
+  margin-right: 2px;
+
+  line-height: 27px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.hotel-card__details-btn:hover {
+  background-color: #669ec0;
+}
+
+.hotel-card__details-btn:focus,
+.hotel-card__details-btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card__booking-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 142px;
+
+  line-height: 27px;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.hotel-card__booking-btn:hover {
+  background-color: #604e43;
+}
+
+.hotel-card__booking-btn:focus,
+.hotel-card__booking-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card__rating-wrapper {
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+.hotel-card__all-stars {
+  margin-bottom: 40px;
+
+  text-align: right;
+}
+
+.hotel-card__star {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  margin-left: 3px;
+
+  background-color: transparent;
+  background-image: url(../img/rating-star.svg);
+  background-repeat: no-repeat;
+}
+
+.hotel-card__rating {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 110px;
+
+  line-height: 27px;
+  text-align: center;
+
+  background-color: #f2f2f2;
 }
 
 
