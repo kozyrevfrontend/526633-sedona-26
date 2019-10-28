@@ -436,6 +436,17 @@ a {
   display: block;
 }
 
+@keyframes popupshow {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .search__form-wrapper.show {
   -webkit-animation: popupshow 0.6s forwards;
           animation: popupshow 0.6s forwards;
