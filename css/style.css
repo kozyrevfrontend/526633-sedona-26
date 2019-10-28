@@ -267,19 +267,19 @@ a {
   text-align: center;
 }
 
-.recommended__item:first-child {
+.recommended__item--estate-bg {
   background-image: url(../img/recommended-bg-house.svg);
   background-repeat: no-repeat;
   background-position: center 60px;
 }
 
-.recommended__item:nth-child(2) {
+.recommended__item--food-bg {
   background-image: url(../img/recommended-bg-burger.svg);
   background-repeat: no-repeat;
   background-position: center 60px;
 }
 
-.recommended__item:last-child {
+.recommended__item--gift-bg {
   background-image: url(../img/recommended-bg-gift.svg);
   background-repeat: no-repeat;
   background-position: center 56px;
