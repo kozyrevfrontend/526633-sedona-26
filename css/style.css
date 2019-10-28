@@ -9,7 +9,7 @@ body {
   text-transform: uppercase;
   color: #333333;
 
-  background-color: #7e4747;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -150,6 +150,13 @@ a {
   background-color: #ffffff;
 }
 
+.intro__wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 575px;
+  margin: 0 auto;
+}
+
 .intro__slogan {
   margin: 0;
   padding-bottom: 27px;
@@ -196,9 +203,9 @@ a {
 
 .reason-row__header {
   margin: 0;
-  padding-right: 40px;
+  padding-right: 120px;
   padding-bottom: 23px;
-  padding-left: 40px;
+  padding-left: 120px;
 
   font-size: 21px;
   font-weight: 700;
@@ -212,10 +219,13 @@ a {
 }
 
 .reason-row__description {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
   margin: 0;
-  padding-right: 40px;
+  padding-right: 48px;
   padding-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 48px;
 }
 
 .reason-row--reverse {
@@ -285,7 +295,8 @@ a {
 }
 
 .recommended__advice {
-  margin: 0;
+  width: 290px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -338,6 +349,8 @@ a {
 .reason-columns__description {
   margin: 0;
   margin-bottom: 20px;
+  padding-left: 49px;
+  padding-right: 49px;
 }
 
 /* Блока поиска гостиницы */
@@ -704,7 +717,7 @@ a {
   position: relative;
   z-index: 10;
 
-  margin-top: -120px;
+  margin-top: -125px;
 
   background-color: rgba(255, 255, 255, 0.9);
 }
