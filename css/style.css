@@ -124,7 +124,7 @@ a {
   content: "";
 
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 
   width: 1200px;
   height: 59px;
@@ -701,9 +701,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
 
   -webkit-box-sizing: border-box;
 
@@ -728,13 +728,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 400px;
+}
+
+.hashtag {
+  padding-top: 47px;
 }
 
 .hashtag__text {
@@ -750,13 +754,14 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-top: 35px;
 
   list-style: none;
 }
@@ -817,6 +822,7 @@ a {
 }
 
 .copyright__img {
+  margin-top: 38px;
   fill: #000000;
 }
 
@@ -829,7 +835,8 @@ a {
 }
 
 .copyright__text {
-  margin-right: 6px;
+  margin-top: 48px;
+  margin-right: 9px;
 }
 
 /* Фильтр жилья */
@@ -1021,7 +1028,8 @@ a {
   padding-left: 65px;
 
   font-size: 14px;
-  line-height: 31px;
+  line-height: 32px;
+  vertical-align: top;
 
   cursor: pointer;
 }
@@ -1031,11 +1039,15 @@ a {
 }
 
 .filters__price-input {
+  box-sizing: border-box;
+  height: 32px;
   width: 50px;
   margin: 0;
+  padding: 0;
 
   color: inherit;
   font: inherit;
+  line-height: 32px;
 
   background: none;
   border: none;
