@@ -977,8 +977,7 @@ a {
 }
 
 .filters__checkbox:focus + .filters__label {
-  font-size: 16px;
-  font-weight: 700;;
+  outline: auto ;
 }
 
 .filters__range {
@@ -1000,7 +999,7 @@ a {
 
   -webkit-box-sizing: border-box;
 
-          box-sizing: border-box;
+          box-sizing: border-box; 
   height: 36px;
   margin-bottom: 20px;
 
@@ -1257,8 +1256,11 @@ a {
 }
 
 .view-by__link--up:focus::before,
+.view-by__link--down:focus::before {
+  outline: auto   ;
+}
+
 .view-by__link--up:active::before,
-.view-by__link--down:focus::before,
 .view-by__link--down:active::before {
   border-bottom: 10px solid #81b3d2;
 }
@@ -1361,7 +1363,6 @@ a {
   background-color: #669ec0;
 }
 
-.hotel-card__details-btn:focus,
 .hotel-card__details-btn:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
@@ -1385,7 +1386,6 @@ a {
   background-color: #604e43;
 }
 
-.hotel-card__booking-btn:focus,
 .hotel-card__booking-btn:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
